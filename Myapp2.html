@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>class 2</h1>
+    num1: <input type="number" id="num1">
+    <br>
+    num2: <input type="number" id="num2">
+    <br>
+    <button onclick="myfunction()">do Sum</button><br>
+    <button onclick="difference()">do Minus</button><br>
+    <button onclick="product()">do Product</button><br>
+    <button onclick="divid()">do divid</button><br>
+    <script>
+        function myfunction() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let result = Number(num1) + Number(num2);
+            console.log("result: ", result);   
+        }
+
+        function difference(){
+
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let result = Number(num1) - Number(num2);
+            console.log("result: ", result);
+        }
+        function product(){
+
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let result = Number(num1) * Number(num2);
+            console.log("result: ", result);
+        }
+        function divid(){
+
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let result = Number(num1) / Number(num2);
+            console.log("result: ", result);
+        }
+
+
+    </script>
+</body>
+</html>
